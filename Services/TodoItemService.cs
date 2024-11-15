@@ -1,11 +1,10 @@
-using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.EntityFrameworkCore;
 using TodoApi.Dtos;
 using TodoApi.Entities;
 
 namespace TodoApi.Services;
 
-public class TodoItemService
+public class TodoItemService : ITodoItemsService
 {
     private readonly DatabaseContext _context;
 
