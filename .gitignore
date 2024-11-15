@@ -482,3 +482,10 @@ $RECYCLE.BIN/
 
 # Vim temporary swap files
 *.swp
+
+#appsettings files
+# Ignorar todos los appsettings
+appsettings.*.json
+
+# No ignorar el archivo appsettings.example.json
+!appsettings.example.json
