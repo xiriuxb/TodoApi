@@ -2,7 +2,7 @@ using TodoApi.Dtos;
 using TodoApi.Entities;
 
 namespace TodoApi.Services;
-public interface ITodoItemsService
+public interface ITodoItemService
 {
     Task<TodoItem> SaveTodoItem(CreateTodoItem dto);
     Task<TodoItem> FindTodoItem(int itemId);

@@ -4,7 +4,7 @@ using TodoApi.Entities;
 
 namespace TodoApi.Services;
 
-public class TodoItemService : ITodoItemsService
+public class TodoItemService : ITodoItemService
 {
     private readonly DatabaseContext _context;
 
@@ -18,7 +18,7 @@ public class TodoItemService : ITodoItemsService
         try
         {
             TodoItem newTodoItem =
-                new TodoItem
+                new()
                 {
                     Title = dto.Title.Trim(),
                     IsCompleted = false,

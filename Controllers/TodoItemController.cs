@@ -6,7 +6,7 @@ using TodoApi.Services;
 namespace TodoApi.Controllers;
 [ApiController]
 [Route("api/todo-item")]
-public class TodoItemController : ControllerBase
+public class TodoItemController : ControllerBase, ITodoItemController
 {
     private readonly TodoItemService _service;
 
